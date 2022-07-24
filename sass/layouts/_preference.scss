@@ -1,0 +1,35 @@
+.preference__subtitle {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
+}
+
+.preference__item {
+    width: 270px;
+}
+
+.preference__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.preference__icon {
+    align-items: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.preference__text {
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}

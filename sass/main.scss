@@ -1,0 +1,25 @@
+// Утиліти
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// Базові
+@import"./base/reset";
+@import"./base/common";
+
+// Компоненти
+@import"./components/container";
+@import"./components/section";
+@import"./components/list";
+
+// Секції
+
+@import"./layouts/header";
+@import"./layouts/hero";
+@import"./layouts/preference";
+@import"./layouts/work";
+@import"./layouts/team";
+@import"./layouts/clients";
+@import"./layouts/sort";
+@import"./layouts/portfolio";
+@import"./layouts/footer";
+@import"./layouts/modal";
