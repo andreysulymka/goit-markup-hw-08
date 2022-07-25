@@ -6,14 +6,28 @@
     letter-spacing: 0.03em;
     text-transform: uppercase
 }
-
+.container-list {
+    @media  screen and(min-width:768px) and(max-width:1199px) {
+     margin: -15px;   
+    }
+}
 .preference__item {
-    width: 270px;
-}
+    
+    @media screen and(min-width:480px) and(max-width:767px) {
+    width: 450px; 
+    &:not(:last-child) {margin-bottom: 30px;}   
+    }
 
-.preference__item:not(:last-child) {
-    margin-right: 30px;
-}
+    @media screen and(min-width:768px) and(max-width:1199px) {
+            width: 354px;
+            margin: 15px;
+        }
+    
+        @media screen and(min-width:1200px) {
+            width: 270px;
+            &:not(:last-child) {margin-right: 30px;}
+        }    
+  }
 
 .preference__icon {
     align-items: center;

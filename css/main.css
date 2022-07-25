@@ -59,15 +59,38 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 15px 0px 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -77,6 +100,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header {
@@ -282,12 +307,33 @@ body {
   text-transform: uppercase;
 }
 
-.preference__item {
-  width: 270px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-list {
+    margin: -15px;
+  }
 }
 
-.preference__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .preference__item {
+    width: 450px;
+  }
+  .preference__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .preference__item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preference__item {
+    width: 270px;
+  }
+  .preference__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .preference__icon {
@@ -318,15 +364,32 @@ body {
   padding-top: 0;
 }
 
-.title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+@media screen and (max-width: 1199px) {
+  .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.8333333333;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
-.title__list {
-  margin-bottom: 50px;
+@media screen and (max-width: 1199px) {
+  .title__list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title__list {
+    margin-bottom: 50px;
+  }
 }
 
 .work__item:not(:last-child) {
@@ -372,23 +435,6 @@ body {
   background-color: #F5F4FA;
 }
 
-.team-logo {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
-
-.team-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .card {
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -396,9 +442,27 @@ body {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-
-.card:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .card {
+    width: 450px;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    width: 354px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 270px;
+  }
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .card__squad {
