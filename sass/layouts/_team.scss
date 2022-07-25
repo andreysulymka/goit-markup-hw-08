@@ -3,16 +3,16 @@
 }
 
 .card {
-    @media screen and(min-width:480px) and(max-width:767px) {
+    @media screen and(min-width:480px) and(max-width: 767px) {
     width: 450px;
     &:not(:last-child) {margin-bottom: 30px;} } 
     
-    @media screen and(min-width:768px) and(max-width:1199px) {
+    @media screen and(min-width:768px) and(max-width: 1199px) {
             width: 354px;
             margin: 15px;
         }
     
-        @media screen and(min-width:1200px) {
+        @media screen and(min-width: 1200px) {
             width: 270px;
     
             &:not(:last-child) {
@@ -26,9 +26,6 @@
     text-align: center;
 }
 
-// .card:not(:last-child) {
-//     margin-right: 30px;
-// }
 
 .card__squad {
     margin-top: 30px;
@@ -38,7 +35,14 @@
 
     font-weight: 500;
 }
-
+.team-list {
+    @media screen and(min-width:768px) and(max-width:1199px) {
+            margin: -15px;
+        }
+}
+.container-list {
+    margin: 15px;
+}
 .card__profession {
     margin-bottom: 16px;
     font-size: 16px;
@@ -47,7 +51,11 @@
 }
 
 .card__list {
-    margin-bottom: 30px;
+    @media screen and(max-width: 1199px) {
+     margin-bottom: 24px;   
+    }
+    @media screen and(min-width: 1200px) {
+    margin-bottom: 30px;}
 }
 
 .link {
