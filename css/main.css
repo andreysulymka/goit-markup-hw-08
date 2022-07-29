@@ -816,18 +816,45 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .button-cont {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .button-cont {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-cont {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .button-cont {
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-cont {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .sort-button {
   background-color: var(--white-color);
 }
 
-.button-dif:not(:last-child) {
-  margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .button-dif:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .portfolio-cont {
