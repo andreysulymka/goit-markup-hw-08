@@ -948,6 +948,7 @@ body {
 
 .work-background {
   width: 450px;
+  display: block;
   background-color: #EEEEEE;
   border: 1px solid #EEEEEE;
 }
