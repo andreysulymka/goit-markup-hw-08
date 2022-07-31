@@ -187,12 +187,19 @@ margin-right: 70px;
     }
 }
 .footer-form-mail {
+   
+    
     @media screen and(max-width:1199px) {
         display: flex;
         justify-content: center;
         width: 450px;
         margin-bottom: 20px;
     }
+         @media screen and(max-width:479px) {
+             display: flex;
+             justify-content: center;
+             width: 100%;
+             margin-bottom: 20px;}
          @media screen and(min-width:1200px) {
             margin-right: 12px;
     }

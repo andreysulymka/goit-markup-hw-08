@@ -130,7 +130,8 @@ body {
     display: none;
   }
 }
-.mobile-menu-btn.is-open .mobile-menu-btn .mobile-menu-burger {
+
+.mobile-menu-btn.is-open .mobile-menu-burger {
   opacity: 0;
 }
 
@@ -605,6 +606,11 @@ body {
 
 .work {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1311,6 +1317,18 @@ footer-container .follow {
         -ms-flex-pack: center;
             justify-content: center;
     width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .footer-form-mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
