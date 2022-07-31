@@ -947,9 +947,19 @@ body {
 }
 
 .work-background {
-  display: block;
+  width: 450px;
   background-color: #EEEEEE;
   border: 1px solid #EEEEEE;
+}
+@media screen and (min-width: 768px) {
+  .work-background {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-background {
+    width: 370px;
+  }
 }
 
 .work-background:nth-child(3n) {
