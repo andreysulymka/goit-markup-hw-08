@@ -23,7 +23,7 @@
 }
 
 .all-logo {
-    @media screen and(min-width: 480px) {
+    
     padding-top: 16px;
     padding-bottom: 16px;
     font-family: 'Raleway';
@@ -32,7 +32,7 @@
         font-size: 24px;
         line-height: calc(28/24);
         letter-spacing: 0.03em;
-    }
+    
     @media screen and(min-width:768px) {
     padding-top: 26px;
     padding-bottom: 26px;
