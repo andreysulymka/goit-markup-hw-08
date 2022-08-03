@@ -54,6 +54,9 @@ footer-container .follow {
     }
 }
 .footer-address-block {
+@media screen and(min-width: 768px) and(max-width: 1199px) {
+        margin-left: 76px;
+    }
     @media screen and(min-width: 1200px) {
 margin-right: 70px;
     }

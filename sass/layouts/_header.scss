@@ -106,6 +106,10 @@
 }
 
 .header-contact {
+    @media screen and (max-width: 1199px)  {
+            font-size: 12px;
+            line-height: 14px;
+        }
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -131,9 +135,10 @@
 }
 
 .header-icons {
+     margin-right: 8px;
     @media screen and(min-width:1200px) {
-    margin-right: 10px;
-    }
+            margin-right: 10px;
+        }
 }
 
 .header-mail {

@@ -1,10 +1,13 @@
 .preference__subtitle {
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     margin-top: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 .container-list {
     @media  screen and(min-width:480px) and(max-width:1199px) {
