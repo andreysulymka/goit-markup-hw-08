@@ -1,8 +1,15 @@
 
 .clients-list {
+    @media screen and(min-width: 480px) {
     margin: -15px;
-}
+    }
+ }
 .clients__card {
+@media screen and(max-width:479px){
+    width: 100%;
+    &:not(:last-child) {
+        margin-bottom: 30px;}
+}
 @media screen and(min-width:480px) and(max-width: 767px) {
         width: 210px;
         margin: 15px;

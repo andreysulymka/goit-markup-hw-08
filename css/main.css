@@ -509,7 +509,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .hero-logo {
+    font-size: 26px;
+    line-height: 1.6153846154;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero-logo {
     font-size: 26px;
     line-height: 1.6153846154;
@@ -782,10 +789,20 @@ body {
   fill: currentColor;
 }
 
-.clients-list {
-  margin: -15px;
+@media screen and (min-width: 480px) {
+  .clients-list {
+    margin: -15px;
+  }
 }
 
+@media screen and (max-width: 479px) {
+  .clients__card {
+    width: 100%;
+  }
+  .clients__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__card {
     width: 210px;
